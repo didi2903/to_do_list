@@ -1,6 +1,14 @@
 const gumb = document.getElementById("gumb");
 gumb.addEventListener("click", noviZadatak);
 
+function brisi(e) {
+    e.target.parentElement.remove();
+}
+
+function prekrizi(e) {
+    e.target.classList.toggle("obavljeno");
+}
+
 // Funkcija koja kreira listu user inputa
 function noviZadatak() {
     const ul = document.getElementById("ul");
@@ -14,19 +22,13 @@ function noviZadatak() {
 
     //Funkcija koja briše element
     x.addEventListener("click", brisi);
-    function brisi() {
-        newLi.remove();
-}
+    
+    newLi.addEventListener("click", prekrizi);
+
 }
 // Funkcija koja prazni input nakon clicka
 gumb.addEventListener("click", brisiInput);
 function brisiInput() {
     let input = document.getElementById("input");
     input.value = "";
-}
-
-let tekst = document.getElementById("naslov");
-tekst.addEventListener("click", prekrizi);
-function prekrizi() {
-    tekst.classList.toggle("obavljeno");
 }
