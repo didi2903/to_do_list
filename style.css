@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, purple, blue);
+}
+#container {
+    background-color: white;
+    margin-top: 80px;
+    width: 550px;
+    border-radius: 20px;
+    text-align: center;
+    min-height: 600px;
+    padding: 30px;
+}
+input {
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    border: solid black 1px;
+    padding-left: 20px;
+}
+button {
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 15pt;
+    border-radius: 30px;
+    border: solid black 1px;
+    
+}
+p { 
+    padding-top: 20px;
+    font-size: 18pt;
+}
+.obavljeno {
+    text-decoration: line-through;
+    color: grey;
+}
+ul {
+    padding-top: 20px;
+}
+li {
+    list-style: none;
+    padding: 10px;
+    font-size: 20pt;
+}
+span {
+    padding-left: 10px;
+}
+span:hover {
+    cursor: pointer;
+}
